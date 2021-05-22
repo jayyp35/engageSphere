@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+
+html,
+body {
+  height: 100vh;
+  font-family: "Orbitron", sans-serif;
+  background-color: rgb(24, 24, 24);
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
+}
+@keyframes textMove {
+  50% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  color: WHITE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  font-size: 30pt;
+  transform: rotate(20deg);
+  animation: textMove;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  text-align: center;
+}
+
+h1 {
+  font-size: 8 rem;
+  color: white;
+}
